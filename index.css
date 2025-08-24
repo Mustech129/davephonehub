@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.glass-nav{
+  background-color: rgba(255, 255, 255, 0.47); /* more visible white tint */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+    padding-top: 40px;
+}
+
+
+/* Glass effect navbar */
+.glass-nav {
+  background-color: rgba(13, 13, 13, 0.5); /* Jet Black w/ transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Navbar text & hover */
+.navbar-dark .nav-link {
+  color: #fff!important;
+  transition: color 0.3s ease;
+}
+.navbar-dark .nav-link:hover{
+  color: #C0A060;
+  opacity: 0.5;
+}
+
+.navbar-dark:hover{
+  color: #C0A060;
+}
+
+/* Brand text */
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* CTA Button */
+.btn-cta {
+  background-color: #7B4B94; /* Royal Purple */
+  color: #FFFFFF;
+  border: 1px solid #C0A060; /* Champagne Gold outline */
+  transition: all 0.3s ease;
+}
+.btn-cta:hover{
+  background-color: #C0A060; /* Champagne Gold */
+  color: #fff;
+} /* Jet Black text */
+
+
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Space between items */
+}
+
+.phones > div {
+  flex: 0 1 250px; /* Items shrink but keep a min width */
+  max-width: 250px;
+}
+
+.about-us{
+  background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+ .hero{
+  text-align: center;
+ }
+  .brand-text {
+    font-size: 0.9rem;
+    list-style: none;
+  }
+
+   .navbar-collapse, 
+  .navbar-nav .dropdown-menu {
+    margin: 0;
+    padding:15px ;
+    width: 100% !important ; 
+    background-color: rgba(13, 13, 13); /* Jet Black w/ transparency */
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  }
+  
+ .repair{
+   height : 20px ;
+ }
+ .phones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers in all browsers */
+}
+.phones > * {
+  flex: 1 1 300px; /* Allows wrapping below 300px */
+}
+ }

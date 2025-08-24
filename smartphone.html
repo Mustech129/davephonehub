@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smartphones — Dave Phone Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.html" >
+  <link rel="stylesheet" href="index.css"> 
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    :root{
+      --jet: #F4C430; --char:#121212; --gold:#C0A060; --purple:#7B4B94; --softgold:#E5C07B; --white:#FFFFFF;
+    }
+    body{ background:black; color:var(--white); font-family:"Josefin Sans", sans-serif; padding-top:70px; }
+    .page-hero{ background: linear-gradient(180deg, rgba(18,18,18,0.6), rgba(13,13,13,0.6)); padding:4rem 0; }
+    h1, h2{ font-family:"Abril Fatface", serif; }
+    .product-card{ background:var(--char); border-radius:12px; overflow:hidden; transition:transform .18s, box-shadow .18s; }
+    .product-card:hover{ transform:translateY(-6px); box-shadow:0 10px 30px rgba(0,0,0,.6); }
+    .price{ color:var(--gold); font-weight:700; }
+    .badge-special{ background: linear-gradient(90deg,var(--softgold),var(--gold)); color:#0D0D0D; font-weight:700; }
+    .btn-purple{ background:var(--purple); color:var(--white); border:1px solid var(--gold); }
+    .btn-purple:hover{ background:var(--gold); color:var(--jet); }
+  </style>
+</head>
+<body>
+
+  <!-- reuse your navbar here -->
+<nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top" style="  top: 0; height: 70px;  top: 0;
+      left: 0;
+      right: 0; z-index: 1000; ">
+  <div class="container">
+    <!-- Brand -->
+    <a class=" fw-bold " href="index.html#home"> <img src="img/dave-phone-gallery-logo.png" alt="Dave Phone Gallery logo"
+         style="width:fit-content; height: 50px;" >  
+         <span class=" brand-text " style="color: #C0A060;"> Dave</span> Phone Gallery </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class=" navbar-nav ms-auto">
+        <li class="nav-item"><a class=" text-white nav-link active mx-1" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class=" text-white nav-link mx-1" href="#sales">Phones</a></li>
+        <li class="nav-item"><a class=" text-white nav-link mx-1" href= "index.html#about">About</a></li>
+        <li class=" nav-item"><a class=" text-white nav-link mx-1" href="index.html#contact">Contact</a></li>
+      </ul>
+      <!-- CTA -->
+      <a href="#contact" class="btn text-light btn-cta ms-lg-3" style=" border:1px solid #C0A060;">Book Repair</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- Example breadcrumb / back -->
+  <div class="container">
+    <nav class="my-3" aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent p-0 mb-2">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none" style="color:var(--white)">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: var(--gold);">Smartphones</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <section class="page-hero bg-dark" style="margin: 0 20px; border-radius: 20px;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="display-5">Smartphones</h1>
+          <p class="lead mb-3">Curated flagship and mid-range phones — inspected, tested, and ready. Click any card for details.</p>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <a href="index.html#gallery-preview" class="btn btn-outline-light me-2">Back to Gallery</a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products grid -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- product card example (copy for multiple) -->
+        <div class="col-6 col-md-6 col-12 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/hp-elitebook-845-g7-laptop.jpg" alt="HP EliteBook 845 G7 business laptop available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1" style="text-transform: uppercase;" style="text-transform: uppercase;">HP EliteBook 845 G7</h5>
+            <div class="mb-2"><small class="text-light">16 GB RAM - 512 GB SSD</small></div>
+            <p class="small text-light mb-3">This model typically comes with an AMD Ryzen 5 Pro processor, such as the 4750U or 4650U,
+               and features a 14-inch Full HD display. </p>
+            <div class="mt-auto d-flex gap-2">
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/apple-iphone-11-smartphone.jpg" alt="Apple iPhone 11 smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1"  style="text-transform: uppercase;">Apple iPhone 11 models. </h5>
+            <div class="mb-2"><small class="text-light" style="text-transform: uppercase;">64gb, 128gb, 255gb</small></div>
+            <p class="small text-light mb-3">Display: It features a 6.1-inch Liquid Retina IPS LCD display with a resolution of 828 x 1792 pixels. <br>
+Processor: Powered by the Apple A13 Bionic chip. </p>
+            <div class="mt-auto d-flex gap-2">
+            <!--<a href="product-phone-model-x.html" class="btn btn-sm btn-outline-light w-100">View</a>-->
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-cta btn-purple w-100">Buy</a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card text-light p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/iphone-13-smartphone.jpg" loading="lazy"  alt="iphone-13-smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1" style="text-transform: uppercase;">Iphone 13</h5>
+            <div class="mb-2"><small class="text-light">128GB</small></div>
+            
+            <p class="small text-light mb-3">Premium camera performance, reliable battery life,
+               and fast charging support. Every device is thoroughly tested, certified for quality</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card text-light p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/samsung-galaxy-s10e-smartphone.jpg" loading="lazy"  alt="Samsung Galaxy S10e smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1" style="text-transform: uppercase;">samsung S10E</h5>
+            <div class="mb-2"><small class="text-light">128GB</small></div>
+            
+            <p class="small text-light mb-3">Flagship camera, fast charging, certified battery health.
+               pristine display, powerful performance, and secure OS updates. 
+               Fully tested and unlocked for all networks — ready to use right out of the box.</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple btn-cta w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+
+ <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card text-light p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/samsung-galaxy-s10-smartphone.jpg"  loading="lazy" alt="Samsung Galaxy S10 smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1">SAMSUNG S10</h5>
+            <div class="mb-2"><small class="text-light">128GB </small></div>
+            
+            <p class="small text-light mb-3">Premium camera performance, reliable battery life,
+               and fast charging support. Every device is thoroughly tested, certified for quality.</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class=" bg-dark btn btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 text-light h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/dell-latitude-3390-laptop.jpg" loading="lazy" alt="Dell Latitude 3390 laptop available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1">DELL LATITUDE</h5>
+            <div class="mb-2"  style="border-bottom: #F4C430;"><small class="text-light"> 8GB RAM, 256GB, 13"FHD Touchscreen, Keyboard Light </small></div>
+            
+            <p class="small text-light mb-3"> Stereo speakers for immersive sound, fast charging, certified battery health</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-cta btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/apple-iphone-xr-smartphone.jpg" loading="lazy" alt="Apple iPhone XR smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1"> IPHONE XR </h5>
+            <div class="mb-2"><small class="text-light"> 64GB, 128GB</small></div>
+            
+            <p class="small text-light mb-3">Flagship camera, fast charging, certified battery health.</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/google-pixel-6-pro-128gb-smartphone.jpg" loading="lazy" alt="Google Pixel 6 Pro 128GB smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1" style="text-transform: uppercase;">GOOGLE PIXEL  6 Pro</h5>
+            <div class="mb-2"><small class="text-light">128GB</small></div>
+            
+            <p class="small text-light mb-3">It features a 6.7-inch LTPO OLED display with a 
+              variable refresh rate up to 120Hz, providing smooth visuals and responsiveness. </p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/apple-iphone-12-smartphone.jpg" loading="lazy" alt="Apple iPhone 12 smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1" style="text-transform: uppercase;">IPhone 12 </h5>
+            <div class="mb-2"><small class="text-light">64GB, 128GB, 256GB</small></div>
+            
+            <p class="small text-light mb-3">Flagship camera, fast charging, certified battery health. Comes with 3-month warranty.</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/apple-iphone-15-smartphone.jpg" loading="lazy" alt="Apple iPhone 15 smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1">IPHONE 15</h5>
+            <div class="mb-2"><small class="text-light">128GB, 256GB </small></div>
+            
+            <p class="small text-light mb-3">Model: Apple iPhone 15. <br>
+              Storage: 128GB. <br> 
+              Status: Unlocked. </p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/samsung-galaxy-s10-smartphone.jpg" loading="lazy" alt="Samsung Galaxy S10 smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1">SAMSUNG S10</h5>
+            <div class="mb-2"><small class="text-light">128GB, 256GB</small></div>
+            <p class="small text-light mb-3">Stay connected with a reliable battery, stunning camera shots, and quick top-ups.</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3">
+          <div class="product-card p-3 h-100 d-flex flex-column">
+            <div class="position-relative mb-2">
+              <img src="img/apple-iphone-13-pro-white-smartphone.png" loading="lazy" alt="Apple iPhone 13 Pro white smartphone available at Dave Phone Gallery in Lagos" class="img-fluid w-100" style="border-radius:8px;">
+              <span class="badge position-absolute top-0 end-0 m-2 badge-special">New</span>
+            </div>
+            <h5 class="mb-1" style="text-transform: uppercase;">iphone 13 pro</h5>
+            <div class="mb-2"><small class="text-light">128GB</small></div>
+            
+            <p class="small text-light mb-3" >IDM, fast charging, battery health 89.</p>
+            <div class="mt-auto d-flex gap-2">
+              
+              <a href="index.html#contact" class="btn bg-dark btn-sm btn-purple w-100">Buy</a>
+            </div>
+          </div>
+        </div>
+        <!-- duplicate above block for other phones -->
+      </div>
+    </div>
+  </section>
+
+
+<footer style="background-color: #0D0D0D; color: #ccc; padding: 40px 20px; border-top: 3px solid #f87060;">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Quick Links -->
+      <div class="col-md-3">
+        <h5 style="color: #C0A060;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#hero" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li><a href="smartphone.html" style="color: #ccc; text-decoration: none;">Shop</a></li>
+          <li><a href="#services" style="color: #ccc; text-decoration: none;">Services</a></li>
+          <li><a href="#contact" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h5 style="color: #C0A060;">Contact Us</h5>
+        <p>5 Koleosho Street Off Medical Road ikeja computer village Lagos</p>
+        <p>📞 +234 705 034 2968</p>
+        <p>✉ gabrielfrank443@gmail.com</p>
+        
+        <div style="margin:10px 0;">
+          <a target="_blank" href="https://www.instagram.com/dave_phone_gallery?igsh=NWh3bmExc282ZDN2&utm_source=qr"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="https://wa.me/message/UOEEDJVNEKWAP1"><i class="fab fa-whatsapp"></i> </a>
+        </div>
+        
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="col-md-3">
+        <h5 style="color: #C0A060;">Opening Hours</h5>
+        <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
+        <p>Sat: 10:00 AM - 6:00 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+
+      <!-- Map & Social Media -->
+      <div class="col-md-3">
+        <h5 style="color: #C0A060;">Find Us</h5>
+        <iframe
+  src="https://www.google.com/maps?q=Medical+Road,+Ikeja+Computer+Village,+Lagos&output=embed"
+  width="100%"
+  height="200"
+  style="border:0; border-radius:10px;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+
+        </div>
+      </div>
+
+    </div>
+
+    <hr style="border-color: #f87060; margin: 20px 0;">
+
+    <p class="text-center" style="margin: 0; font-size: 14px;">
+      &copy; 2025 Dave Phone Gallery. All rights reserved.
+    </p>
+  </div>
+</footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
